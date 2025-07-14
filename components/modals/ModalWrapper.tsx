@@ -10,9 +10,9 @@ export default function ModalWrapper({
 }: {
   children: ReactNode;
   title: string,
-  titleAction:string,
+  titleAction?:string,
   onClose: () => void;
-  onClickAction: () => void;
+  onClickAction?: () => void;
 }) {
   return (
     <div className="modal is-active">
