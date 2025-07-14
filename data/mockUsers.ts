@@ -104,7 +104,7 @@ export const mockUsers = [
         "metricIds": [
           "M94"
         ],
-        "calculation": "SUM(value) / COUNT(distinct users)",
+        "calculation": 90,
         "visualsAvailable": [
           "pie"
         ],
