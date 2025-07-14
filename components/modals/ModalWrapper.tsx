@@ -9,7 +9,7 @@ export default function ModalWrapper({
 
 }: {
   children: ReactNode;
-  titile: string,
+  title: string,
   titleAction:string,
   onClose: () => void;
   onClickAction: () => void;
