@@ -40,7 +40,8 @@ export default function ViewAssetModal({
   assetId,
   onClose
 }: {
-  asset: AssetBase;
+  mode: 'layout' | 'storyboard';
+  assetId: string;
   onClose: () => void;
 }) {
   const user = useSelector(selectCurrentUser);
