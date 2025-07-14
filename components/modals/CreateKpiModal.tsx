@@ -10,7 +10,7 @@ export default function CreateKpiModal({ onClose }: { onClose: () => void }) {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [calculation, setCalculation] = useState(0);
+  const [calculation, setCalculation] = useState('');
   const [visualsAvailable, setVisualsAvailable] = useState<string[]>([]);
   const [businessQuestions, setBusinessQuestions] = useState<string[]>([]);
 
