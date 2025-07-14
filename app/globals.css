@@ -1,0 +1,82 @@
+@import "bulma/css/bulma.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App shell */
+html,
+body {
+  height: 100%;
+  background-color: #f9fafb; /* light gray */
+}
+
+.title {
+  /* Overrides the global value */
+  color: var(--bulma-primary-00);
+}
+
+.container-box {
+  max-width: 980px;
+  margin: 1rem auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(16, 24, 40, 0.04), 0 0 0 1px #e5e7eb;
+  padding: 2.5rem 3rem;
+}
+
+/* Search bar */
+.input.search-input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+/* Tabs */
+.tabs.is-pill li.is-active a {
+  background-color: #1c64f2; /* primary blue */
+  color: #fff;
+}
+
+.tabs.is-pill li a {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Asset cards */
+.asset-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: box-shadow 0.15s ease;
+}
+
+.asset-card:hover {
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.1);
+}
+
+.asset-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #6b7280;
+}
+
+.asset-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* Modal tweaks */
+.modal-card-body {
+  padding: 2rem 2.5rem;
+}
